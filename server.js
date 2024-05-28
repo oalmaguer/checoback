@@ -14,7 +14,7 @@ app.post("/webhook", (req, res) => {
   console.log("webhookkkkk");
   console.log(req);
   console.log(req.body);
-  res.status(200).end() // Responding is important
+  res.status(200).send(); // Responding is important
 });
 
 app.listen(port, () => {
