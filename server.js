@@ -13,6 +13,8 @@ app.get("/", (req, res) => {
 app.post("/webhook", (req, res) => {
   console.log("webhookkkkk");
   console.log(req.body);
+  var data = typeof req.body == 'string' ? JSON.parse(req.body) : req.body; 
+  console.log(data);
   res.status(200).send(); // Responding is important
 });
 
