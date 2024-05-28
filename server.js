@@ -12,6 +12,7 @@ app.get("/", (req, res) => {
 
 app.post("/webhook", (req, res) => {
   console.log("webhjookkkkk");
+  console.log(req.body);
   res.send("Webhook found");
 });
 
